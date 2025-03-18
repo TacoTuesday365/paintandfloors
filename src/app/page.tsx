@@ -9,8 +9,8 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2000&auto=format&fit=crop"
-            alt="Professional painting service"
+            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2000&auto=format&fit=crop"
+            alt="Professional painting and flooring services"
             fill
             priority
             className="object-cover brightness-50"
@@ -19,10 +19,10 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Transform Spaces with Professional Touch
+              Elevate Your Home with Expert Painting and Flooring Solutions
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Elevate your home with expert painting and flooring solutions. Discover transformative services in Winter Garden, FL today.
+              Discover transformative services in Winter Garden, FL today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="px-8 py-4 bg-white text-[#1a365d] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
@@ -48,7 +48,7 @@ export default function Home() {
               <div className="aspect-w-16 aspect-h-9 relative">
                 <div className="w-full h-48 relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1595830300283-c0f2f6a34d58?q=80&w=800&auto=format&fit=crop"
                     alt="Residential Painting"
                     fill
                     className="object-cover"
