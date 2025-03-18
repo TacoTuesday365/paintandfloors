@@ -9,7 +9,7 @@ export default function Home() {
       <section className="relative min-h-[80vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2000&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2000&auto=format&fit=crop"
             alt="Professional painting and flooring services"
             fill
             priority
@@ -48,7 +48,7 @@ export default function Home() {
               <div className="aspect-w-16 aspect-h-9 relative">
                 <div className="w-full h-48 relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1595830300283-c0f2f6a34d58?q=80&w=800&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1562259934-1e4b8bcd1c34?q=80&w=800&auto=format&fit=crop"
                     alt="Residential Painting"
                     fill
                     className="object-cover"
@@ -86,7 +86,7 @@ export default function Home() {
               <div className="aspect-w-16 aspect-h-9 relative">
                 <div className="w-full h-48 relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
                     alt="Color Consultation"
                     fill
                     className="object-cover"
