@@ -1,25 +1,21 @@
 import Image from 'next/image'
-import Navigation from '@/components/Navigation'
 import ContactForm from '@/components/ContactForm'
+import React from 'react'
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      
+    <>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center">
-        {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2000"
+            src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2000&auto=format&fit=crop"
             alt="Professional painting service"
             fill
-            className="object-cover brightness-50"
             priority
+            className="object-cover brightness-50"
           />
         </div>
-        
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -41,54 +37,68 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-blue-600 font-semibold">Crafted Excellence</span>
+            <span className="text-[#1a365d] font-semibold">Crafted Excellence</span>
             <h2 className="text-4xl font-bold mt-2">Quality Painting & Flooring Solutions</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800"
-                  alt="Residential Painting"
-                  fill
-                  className="object-cover"
-                />
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <div className="w-full h-48 relative">
+                  <Image
+                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop"
+                    alt="Residential Painting"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Residential Painting Excellence</h3>
-              <p className="text-gray-600">
-                Transform your home with our expert interior and exterior painting services, tailored to your style.
-              </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-[#1a365d]">Residential Painting Excellence</h3>
+                <p className="text-gray-600">
+                  Transform your home with our expert interior and exterior painting services, tailored to your style.
+                </p>
+              </div>
             </div>
-            <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=800"
-                  alt="Premium Flooring"
-                  fill
-                  className="object-cover"
-                />
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <div className="w-full h-48 relative">
+                  <Image
+                    src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=800&auto=format&fit=crop"
+                    alt="Premium Flooring"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Premium Flooring Solutions</h3>
-              <p className="text-gray-600">
-                Upgrade any room with our quality flooring options, including hardwood, laminate, and vinyl.
-              </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-[#1a365d]">Premium Flooring Solutions</h3>
+                <p className="text-gray-600">
+                  Upgrade any room with our quality flooring options, including hardwood, laminate, and vinyl.
+                </p>
+              </div>
             </div>
-            <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800"
-                  alt="Color Consultation"
-                  fill
-                  className="object-cover"
-                />
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 relative">
+                <div className="w-full h-48 relative">
+                  <Image
+                    src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop"
+                    alt="Color Consultation"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Custom Color Consultations</h3>
-              <p className="text-gray-600">
-                Personalized color consultations to ensure your space reflects your unique taste and vision.
-              </p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-[#1a365d]">Custom Color Consultations</h3>
+                <p className="text-gray-600">
+                  Personalized color consultations to ensure your space reflects your unique taste and vision.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -140,17 +150,19 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-primary text-white">
+      <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Contact Us for Expert Help</h2>
-            <p className="text-xl mb-12">
-              Reach out to discuss your Winter Garden painting and flooring needs.
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-[#1a365d]">Get Your Free Quote Today</h2>
+              <p className="text-xl text-gray-600 mt-4">
+                Ready to transform your space? Contact us for a consultation and free quote.
+              </p>
+            </div>
             <ContactForm />
           </div>
         </div>
       </section>
-    </div>
+    </>
   )
 } 
