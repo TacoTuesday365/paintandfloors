@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -14,16 +16,13 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/services" className="text-gray-700 hover:text-primary">
+            <Link href="#services" className="text-gray-700 hover:text-primary">
               Services
             </Link>
-            <Link href="/portfolio" className="text-gray-700 hover:text-primary">
-              Portfolio
+            <Link href="#testimonials" className="text-gray-700 hover:text-primary">
+              Testimonials
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary">
-              About
-            </Link>
-            <Link href="/contact" className="btn-primary">
+            <Link href="#contact" className="btn-primary">
               Contact Us
             </Link>
           </div>
@@ -56,28 +55,21 @@ export default function Navigation() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
-                href="/services"
+                href="#services"
                 className="block px-3 py-2 text-gray-700 hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
-                href="/portfolio"
+                href="#testimonials"
                 className="block px-3 py-2 text-gray-700 hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Portfolio
+                Testimonials
               </Link>
               <Link
-                href="/about"
-                className="block px-3 py-2 text-gray-700 hover:text-primary"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/contact"
+                href="#contact"
                 className="block px-3 py-2 text-primary hover:text-primary-dark"
                 onClick={() => setIsMenuOpen(false)}
               >

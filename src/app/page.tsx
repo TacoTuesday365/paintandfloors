@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import Navigation from '@/components/Navigation'
+import ContactForm from '@/components/ContactForm'
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navigation />
+      
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-r from-primary to-primary-dark text-white">
         <div className="container mx-auto px-4">
@@ -14,19 +18,19 @@ export default function Home() {
               Elevate your home with expert painting and flooring solutions. Discover transformative services in Winter Garden, FL today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <a href="#contact" className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                 Transform Your Home
-              </button>
-              <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
+              </a>
+              <a href="#services" className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-white">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <span className="text-blue-600 font-semibold">Crafted Excellence</span>
@@ -76,7 +80,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="testimonials" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Success Stories from Local Homeowners</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -121,35 +125,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-primary text-white">
+      <section id="contact" className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8">Contact Us for Expert Help</h2>
             <p className="text-xl mb-12">
               Reach out to discuss your Winter Garden painting and flooring needs.
             </p>
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60"
-                />
-              </div>
-              <textarea
-                placeholder="Message"
-                rows={4}
-                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60"
-              ></textarea>
-              <button type="submit" className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
-                Get a Free Quote
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
