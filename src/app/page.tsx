@@ -8,9 +8,20 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-r from-primary to-primary-dark text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="relative min-h-[80vh] flex items-center justify-center">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?q=80&w=2000"
+            alt="Professional painting service"
+            fill
+            className="object-cover brightness-50"
+            priority
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Transform Spaces with Professional Touch
             </h1>
@@ -18,7 +29,7 @@ export default function Home() {
               Elevate your home with expert painting and flooring solutions. Discover transformative services in Winter Garden, FL today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <a href="#contact" className="px-8 py-4 bg-white text-[#1a365d] font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                 Transform Your Home
               </a>
               <a href="#services" className="px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors">
@@ -38,11 +49,13 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
+              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800"
+                  alt="Residential Painting"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold mb-3">Residential Painting Excellence</h3>
               <p className="text-gray-600">
@@ -50,12 +63,13 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                  <line x1="3" y1="9" x2="21" y2="9"></line>
-                  <line x1="3" y1="15" x2="21" y2="15"></line>
-                </svg>
+              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=800"
+                  alt="Premium Flooring"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold mb-3">Premium Flooring Solutions</h3>
               <p className="text-gray-600">
@@ -63,12 +77,13 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <circle cx="12" cy="12" r="6"></circle>
-                  <circle cx="12" cy="12" r="2"></circle>
-                </svg>
+              <div className="w-full h-48 mb-6 relative rounded-lg overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800"
+                  alt="Color Consultation"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <h3 className="text-2xl font-bold mb-3">Custom Color Consultations</h3>
               <p className="text-gray-600">
